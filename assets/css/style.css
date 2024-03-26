@@ -1019,6 +1019,12 @@ p {
     align-items: center;
   }
 }
+@media screen and (min-width: 1350px) {
+  .quienesSomosImage {
+    flex-direction: initial;
+    justify-content: space-around;
+  }
+}
 
 .single_lawyer .lawyer_image {
   position: relative;
