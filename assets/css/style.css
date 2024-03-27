@@ -1008,15 +1008,18 @@ p {
 }
 .quienesSomosImage {
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
-}
-
-@media screen and (min-width: 480px) {
-  .quienesSomosImage {
-    flex-direction: column;
+  flex-direction: column;
     justify-content: center;
     align-items: center;
+ 
+}
+
+@media screen and (min-width: 1000px) {
+  .quienesSomosImage {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: initial;
+    padding: 20px;
   }
 }
 @media screen and (min-width: 1350px) {
@@ -1096,6 +1099,10 @@ p {
 .parrafo {
   direction: ltr;
   text-align: justify;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 .single_lawyer .lawyer_content {
   margin-top: 25px;
